@@ -1,0 +1,3 @@
+directory 'c:\Certificate' do
+      action:create
+end
