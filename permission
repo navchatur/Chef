@@ -1,0 +1,7 @@
+resource 'x.txt' do
+  rights :read, 'Everyone'
+  rights :write, 'domain\group'
+  rights :full_control, 'group_name_or_user_name'
+  rights :full_control, 'user_name', :applies_to_children => true
+  deny_rights :read, ['Nidhi', 'Vivek']
+end
